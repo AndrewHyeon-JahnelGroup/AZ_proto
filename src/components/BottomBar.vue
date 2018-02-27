@@ -1,28 +1,14 @@
 <template>
-  <div class="row bottom">
+  <div class="row bottom fixed-bottom">
     <div class="col-md-6 map">
-      <gmap-map
-        class="gmap"
-        :center="center"
-        :zoom="12"
-      >
-        <gmap-marker
-          :key="index"
-          v-for="(m, index) in markers"
-          :position="m.position"
-          :clickable="true"
-          :draggable="true"
-          @click="center=m.position"
-        >
-        </gmap-marker>
-      </gmap-map>
+      <h3> bottom bar </h3>
     </div>
     <div class="col-md-4 location text-left">
-
+      <h3> bottom bar </h3>
 
     </div>
     <div class="col-md-2 location">
-
+<h3> bottom bar </h3>
     </div>
   </div>
 </template>
@@ -54,6 +40,7 @@ export default {
 }
 
 .gmap{
+  color: white;
   max-width: 500px;
   min-width: 300px;
   height: 100%
@@ -68,7 +55,7 @@ export default {
 
 .bottom {
   width: 100%;
-  height: 350px;
-  background-color: #D5D5D5;
+  height: 50px;
+  background-color: #070029;
 }
 </style>

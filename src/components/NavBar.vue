@@ -21,3 +21,9 @@ export default{
   name: 'NavBar'
 }
 </script>
+
+<style>
+.navbar {
+  position: sticky;
+}
+</style>

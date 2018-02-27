@@ -1,20 +1,29 @@
 <template>
   <div>
-    <div class="row" id="app">
+    <div class="row fixed-top top md-elevation-3" id="app">
       <div class="md-col-1 logo">
         <img id="logo" src="./assets/logo.png">
       </div>
       <div class="md-col-6 nav">
-        <nav-bar />
+        <nav-bar/>
       </div>
       <div>
       </div>
     </div>
-    <div class="container">
+    <div class="container page">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <router-view />
     </div>
     <div>
-      <bottom-bar />
+      <bottom-bar class="fixed-bottom"/>
     </div>
   </div>
 </template>
@@ -52,6 +61,14 @@ export default {
 </script>
 
 <style>
+.top{
+  background: white
+}
+
+.page{
+  top: 30px
+  
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
