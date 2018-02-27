@@ -56,6 +56,10 @@ export default {
 .bottom {
   width: 100%;
   height: 50px;
-  background-color: #070029;
+  background: #b59232; /* Old browsers */
+  background: -moz-linear-gradient(top, #b59232 0%, #0c113f 29%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b59232 0%,#0c113f 29%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b59232 0%,#0c113f 29%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b59232', endColorstr='#0c113f',GradientType=0 ); /* IE6-9 */
 }
 </style>

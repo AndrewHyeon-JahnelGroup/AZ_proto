@@ -11,15 +11,6 @@
       </div>
     </div>
     <div class="container page">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
       <router-view />
     </div>
     <div>
@@ -66,8 +57,8 @@ export default {
 }
 
 .page{
-  top: 30px
-  
+  padding-top: 125px
+
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

@@ -13,7 +13,7 @@
     <br />
     
     <div class="container platform">
-      <div class="row">
+      <div class="row md-alignment-center-center">
         <div class="col-md-6">
           <img src="../assets/img1.jpg">
         </div>
