@@ -29,15 +29,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 .frontpage {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
 .abt {
   text-align: center
 }
+
 #about {
   width: 80%;
   text-align: center;

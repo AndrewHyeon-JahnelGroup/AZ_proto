@@ -2,7 +2,7 @@
   <div class="col contact">
     <p>{{content}}</p>
     <div>
-      <email-modal class="text-center"/>
+      <email-form class="text-center"/>
     </div>
   </div>
 </template>

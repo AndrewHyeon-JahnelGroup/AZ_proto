@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="whole">
     <div class="row fixed-top top md-elevation-3" id="app">
       <div class="md-col-1 logo">
         <img id="logo" src="./assets/logo.png">
@@ -52,12 +52,18 @@ export default {
 </script>
 
 <style>
+
+.whole{
+  background-color: #0c0e22;
+}
+
 .top{
   background: white
 }
 
 .page{
-  padding-top: 125px
+  padding-top: 125px;
+
 
 }
 #app {
