@@ -1,18 +1,8 @@
 <template>
-  <div class="frontpage">
-    <div class="col">
-      <h1 class="abt">{{ msg }}</h1>
+  <div class="aboutpage container">
+    <div class="col-md-6">
     </div>
-    <div class="row">
-      <div class="col-md-12" id="about">
-        <p>{{ content }}</p>
-      </div>
-    </div>
-    <div class = "loadercontainer">
-      <div class="loader">
-        <div id="largeBox"></div>
-        <div id="smallBox"></div>
-      </div>
+    <div class="col-md-6">
     </div>
   </div>
 </template>
@@ -23,15 +13,21 @@ export default {
   data () {
     return {
       msg: 'About',
-      content: 'Founded in 2018, Azura is a Los Angeles based company with offices in New York and Spain. It’s team includes some of the art world’s most forward-thinking visionaries as well as a growing roster of highly revered contemporary artists. '
+      content: 'Founded in 2018, Azura is a Los Angeles based company with offices in New York and Spain. It’s team includes some of the art world’s most forward-thinking visionaries as well as a growing roster of highly revered contemporary artists. ',
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
 
-.frontpage {
+body{
+  width: 100%;
+  height: 100%;
+
+}
+.abouttpage {
+  background-image: url(../assets/img1.jpg);
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -42,7 +38,7 @@ export default {
 }
 
 #about {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 

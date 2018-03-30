@@ -49,9 +49,7 @@ export default {
 
 <style>
 /* Three columns side by side */
-.container {
-  display: flex;
-}
+
 .name {
   width: auto;
   position: absolute;

@@ -1,8 +1,13 @@
 <template>
-  <div class="col contact">
-    <p>{{content}}</p>
-    <div>
-      <email-form class="text-center"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 contactus">
+        <h6>{{msg}}</h6>
+        <p>{{content}}</p>
+        <div>
+          <email-modal class="text-center"/>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -24,9 +29,10 @@ export default {
 }
 </script>
 
-<style scoped>
-.contact {
-  margin: 25px;
+<style>
+.contactus {
+  width: 50%;
+  top: 100px;
   text-align: center
 }
 </style>

@@ -1,27 +1,15 @@
 <template>
   <div class="whole">
-    <div class="row fixed-top top md-elevation-3" id="app">
-      <div class="md-col-1 logo">
-        <img id="logo" src="./assets/logo.png">
-      </div>
-      <div class="md-col-6 nav">
-        <nav-bar/>
-      </div>
-      <div>
-      </div>
-    </div>
-    <div class="container page">
-      <router-view />
-    </div>
-    <div>
-      <bottom-bar class="fixed-bottom"/>
-    </div>
+    <nav-bar/>
+  <div class="page">
+    <router-view />
   </div>
+</div>
+
 </template>
 
 <script>
 import FrontPage from './components/FrontPage'
-import TodoList from './components/toDoList'
 import NavBar from './components/NavBar'
 import AboutPage from './components/AboutPage'
 import OurTeam from './components/OurTeam'
@@ -34,7 +22,6 @@ export default {
   name: 'App',
   components: {
     FrontPage,
-    TodoList,
     NavBar,
     AboutPage,
     OurTeam,
@@ -51,10 +38,15 @@ export default {
 
 </script>
 
-<style>
-
+<style scoped>
+body{
+  width: auto;
+  height: 100%
+}
 .whole{
-  background-color: #0c0e22;
+  width: auto;
+  background-size: contain;
+  height: auto;
 }
 
 .top{
@@ -62,9 +54,11 @@ export default {
 }
 
 .page{
-  padding-top: 125px;
-
-
+  margin: 0px;
+  margin-right: 0px;
+  border: 0px;
+  padding: 0px;
+  width: 100%;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -74,21 +68,7 @@ export default {
   color: #2c3e50;
 }
 
-#logo {
-  height: 100px;
-}
-#stock {
-  width: 100%;
-}
-
-.logo {
-  margin-left: 20px;
-  padding: 10px;
-  background-color: white
-}
-
 .nav {
-  vertical-align: bottom;
-  padding-top: 60px
+
 }
 </style>

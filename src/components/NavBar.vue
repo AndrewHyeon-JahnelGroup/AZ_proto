@@ -6,9 +6,9 @@
       </div>
       <div class="col-md-8">
         <md-tabs md-sync-route>
-          <md-tab id="tab-home" md-label="Home" to="/"></md-tab>
-          <md-tab id="tab-pages" md-label="About" to="/about"></md-tab>
-          <md-tab id="tab-posts" md-label="Our Team" to="/team"></md-tab>
+          <md-tab id="tab-home" md-label="Overview" to="/"></md-tab>
+          <md-tab id="tab-pages" md-label="The Azura Platform" to="/about"></md-tab>
+          <md-tab id="tab-posts" md-label="About Us" to="/team"></md-tab>
           <md-tab id="tab-settings" md-label="Contact" to="/contact"></md-tab>
         </md-tabs>
       </div>

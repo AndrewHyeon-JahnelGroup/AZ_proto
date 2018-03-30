@@ -1,10 +1,11 @@
 <template>
-  <div class="team">
-    <h1>Team</h1>
-      <div class="container card-deck">
-        <team-profile v-for="item in team"
-                      v-bind:name="item.name" :about="item.about" :title="item.title" :email="item.email"/>
-      </div>
+  <div class="teampage container">
+    <div class="col-md-6">
+      <h4>About Us</h4>
+      
+    </div>
+    <div class="col-md-6">
+    </div>
   </div>
 </template>
 
@@ -29,10 +30,5 @@ export default {
   margin-bottom: 25px;
   width: 100%
 }
-.container {
-  margin: 10px;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap
-}
+
 </style>
