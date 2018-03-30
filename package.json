@@ -25,6 +25,7 @@
     "serve-static": "^1.13.1",
     "vue": "^2.5.2",
     "vue-axios": "^2.0.2",
+    "vue-carousel": "^0.6.9",
     "vue-material": "^1.0.0-beta-8",
     "vue-router": "^3.0.1",
     "vue2-google-maps": "^0.8.5",

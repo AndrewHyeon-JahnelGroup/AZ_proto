@@ -10,7 +10,9 @@ import 'vue-material/dist/theme/default.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import VueCarousel from 'vue-carousel'
 
+Vue.use(VueCarousel);
 Vue.use(BootstrapVue);
 Vue.use(VueRouter);
 Vue.use(VueMaterial);

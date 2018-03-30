@@ -1,15 +1,35 @@
 <template>
   <div class="aboutpage container">
-    <div class="col-md-6">
-    </div>
-    <div class="col-md-6">
-    </div>
+    <carousel>
+      <slide>
+        <div class="col-md-6">
+          <p>dsafdasfdsafdsa</p>
+        </div>
+        <div class="col-md-6">
+          <p>dsafdsafdsafdsa</p>
+        </div>
+      </slide>
+      <slide>
+        <p>dsafdsafdsafdsafdsaf</p>
+      </slide>
+      <slide>
+        <p>sdfdasfdsafdsafdsafdsafda</P>
+      </slide>
+      <slide>
+        <p>dsafdsafdsafdsafdsafdsaf</p>
+      </slide>
+    </carousel>
   </div>
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel'
 export default {
   name: 'AboutPage',
+  components: {
+    Carousel,
+    Slide
+  },
   data () {
     return {
       msg: 'About',
