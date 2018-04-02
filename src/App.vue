@@ -1,9 +1,11 @@
 <template>
   <div class="whole">
-    <nav-bar/>
-  <div class="page">
-    <router-view />
-  </div>
+    <div class="nav">
+      <nav-bar/>
+    </div>
+    <div class="page">
+      <router-view />
+    </div>
 </div>
 
 </template>

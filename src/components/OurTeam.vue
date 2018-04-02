@@ -1,10 +1,19 @@
 <template>
   <div class="teampage container">
-    <div class="col-md-6">
-      <h4>About Us</h4>
-      
-    </div>
-    <div class="col-md-6">
+    <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="team col-4">
+        <h4>About Us</h4>
+        <br />
+        <br />
+        <p>{{content}}</p>
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-6 aboutpic">
+        <img src="../assets/aboutus.jpg">
+      </div>
     </div>
   </div>
 </template>
@@ -19,7 +28,9 @@ export default {
   },
   data () {
     return {
-      team: []
+      team: [],
+      content: 'Founded in 2018, Azura is a Los Angeles based company with offices in New York and Spain. It’s team includes some of the art world’s most forward-thinking visionaries as well as a growing roster of highly revered contemporary artists. ',
+
     }
   }
 }
@@ -28,7 +39,16 @@ export default {
 .team {
   margin-top: 25px;
   margin-bottom: 25px;
-  width: 100%
+  width: 100%;
+  top: 30vh;
+}
+
+.teampage {
+  height: 100vh
+}
+
+.aboutpic {
+  top: 15vh;
 }
 
 </style>

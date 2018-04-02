@@ -2,9 +2,13 @@
   <div class="platform">
     <div class="row platformcontainer">
       <div class="col-md-4 white">
+        <p> The <b>world's First</b>. All-Encompassing Digital Arts Platform</p>
       </div>
+
       <div class="col-md-8 frontpage">
-        <img src="../assets/img_1.jpg">
+        <div class="image">
+          <img src="../assets/img_1.jpg">
+        </div>
         <div class="fronttext">
           <p>{{ overview1 }}</p>
           <br />
@@ -12,7 +16,6 @@
         </div>
 
       </div>
-
     </div>
   </div>
 </template>
@@ -35,23 +38,39 @@ export default {
 <style>
 .image{
   position: relative;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  top: -100px;
+  width: 100%
 }
 .platformcontainer {
   width: 100%;
   height: 100%;
   background-size: contain;
+  margin: 0px
+}
+
+.white {
+  color: #B5A369;
+  top: 40vh;
+  left: 20vh;
+  font-size: 20px;
 }
 
 .frontpage {
+  padding: 0px;
   padding-top: 20px;
   margin: 0;
+  position: relative;
 }
 
 .fronttext {
   position: absolute;
-  top: 30%;
+  top: 17vh;
   left:60%;
   padding-right: 50px;
+  width: 35%
 }
 .loadercontainer {
   padding: 20px;
