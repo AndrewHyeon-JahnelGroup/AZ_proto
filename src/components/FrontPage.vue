@@ -2,7 +2,9 @@
   <div class="platform">
     <div class="row platformcontainer">
       <div class="col-md-4 white">
-        <p> The <b>world's First</b>. All-Encompassing Digital Arts Platform</p>
+        <div class="goldtext">
+          <p> The <b>world's First</b>. All-Encompassing Digital Arts Platform</p>
+        </div>
       </div>
 
       <div class="col-md-8 frontpage">
@@ -37,12 +39,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .image{
-  position: relative;
+  position: absolute;
   border: 0px;
   margin: 0px;
   padding: 0px;
   top: -100px;
-  width: 100%
+  width: 100%;
+  z-index: 0;
 }
 .platformcontainer {
   width: 100%;
@@ -52,10 +55,19 @@ export default {
 }
 
 .white {
+  position: relative;
   color: #B5A369;
   top: 40vh;
   left: 20vh;
-  font-size: 20px;
+  font-size: 30px;
+  width: 200px;
+  z-index: 2;
+}
+
+.goldtext {
+  width: 110%;
+  height: 120%;
+  line-height: 30px;
 }
 
 .frontpage {
