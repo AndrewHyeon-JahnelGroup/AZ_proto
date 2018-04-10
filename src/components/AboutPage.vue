@@ -1,24 +1,17 @@
 <template>
-  <div class="aboutpage container">
-    <carousel>
-      <slide>
-        <div class="col-md-6">
-          <p>dsafdasfdsafdsa</p>
-        </div>
-        <div class="col-md-6">
-          <p>dsafdsafdsafdsa</p>
-        </div>
-      </slide>
-      <slide>
-        <p>dsafdsafdsafdsafdsaf</p>
-      </slide>
-      <slide>
-        <p>sdfdasfdsafdsafdsafdsafda</P>
-      </slide>
-      <slide>
-        <p>dsafdsafdsafdsafdsafdsaf</p>
-      </slide>
-    </carousel>
+  <div class="aboutpage md-alignment-center-center">
+    <img id="top" src="../assets/img_2.jpg">
+    <div class="text">
+      <p class="md-alignment-center-center"> <b>The Azura Platform</b> </p>
+      <div style="text-align:center">
+        <span class="dot" @click.stop="currentSlide(1)"></span>
+        <span class="dot" @click.stop="currentSlide(2)"></span>
+        <span class="dot" @click.stop="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="top">
+    </div>
+      <p>dsafdasfdsafdsa</p>
   </div>
 </template>
 
@@ -30,6 +23,26 @@ export default {
     Carousel,
     Slide
   },
+  methods: {
+    showSlides: function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    },
+    currentSlide: function currentSlide(n) {
+      Event.$emit('showSlides' , n);
+    }
+  },
   data () {
     return {
       msg: 'About',
@@ -38,18 +51,50 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 body{
   width: 100%;
   height: 100%;
 
 }
-.abouttpage {
-  background-image: url(../assets/img1.jpg);
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+
+.aboutpage {
+  height: auto;
+  overflow: scroll;
+}
+
+#top {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  /* Preserve aspet ratio */
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.text{
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  z-index: 2;
+  left: 50vw;
+  top: 50vh;
 }
 
 .abt {

@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style scoped>
+.nav{
+  /* position: sticky; */
+}
 body{
   width: auto;
   height: 100%
@@ -49,6 +52,9 @@ body{
   width: auto;
   background-size: contain;
   height: auto;
+  background-color: rgba(0,0,0,0);
+  margin: 0px;
+
 }
 
 .top{
