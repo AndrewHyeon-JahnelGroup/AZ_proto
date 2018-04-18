@@ -12,30 +12,17 @@ app.use(express.static(path.join(__dirname, '../dist')));
 
 app.post('/send', function(req, res) {
 
-  //mailgun apik
-
-  // var domain = 'sandboxc4b09ff7bf6d49738e53add90ddb43a0.mailgun.org';
-  // var mg = new mailgun({
-  //   apiKey: mgKey,
-  //   domain: domain
-  // });
-  // //Your sending email address
-  // var from_who = 'postmaster@sandboxc4b09ff7bf6d49738e53add90ddb43a0.mailgun.org';
-  // //data formatted form mailgun
-  // var mgdata = req.body;
-  // mgdata.sender = from_who
-  // mgdata.to = '';
-  // mgdata.from = mgdata.name + ' <' + mgdata.from + ', ' + mgdata.number + '>'
-  // delete mgdata.name
-  // console.log(mgdata)
-  // 
-  // mg.messages().send(mgdata, function(error, body) {
-  //   console.log(body)
-  // })
-})
-
-var PORT = process.env.PORT || 4000;
-
-app.listen(PORT);
-console.log('server started '+ PORT);
-module.exports = app;
+  var domain = 'sandbox5546b5f3d3a34870a17f8297d342df4e.mailgun.org';
+  var mg = new mailgun({
+    apiKey: 'key-fae1df8c26c72d94230ce16308430ae0',
+    domain: domain
+  });
+  //Your sending email address
+  var from_who = 'postmaster@sandbox5546b5f3d3a34870a17f8297d342df4e.mailgun.org';
+  //data formatted form mailgun
+  var mgdata = req.body;
+  mgdata.sender = from_who
+  mgdata.to = 'derek@azura.la, regina@azura.legal';
+  mgdata.from = mgdata.name + ' <' + mgdata.from + '>'
+  delete mgdata.name
+  console.log(mgdata)wwwwwwaaaaaaaaaaaaaaaaaaaaas

@@ -11,7 +11,9 @@
     </div>
     <div class="top">
     </div>
-      <p>dsafdasfdsafdsa</p>
+
+    <div class="mySlides fade">
+    </div>
   </div>
 </template>
 
@@ -32,7 +34,7 @@ export default {
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
-      }
+      } 
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }
@@ -40,7 +42,7 @@ export default {
       dots[slideIndex-1].className += " active";
     },
     currentSlide: function currentSlide(n) {
-      Event.$emit('showSlides' , n);
+      this.showSlides(slideIndex = n);
     }
   },
   data () {
@@ -93,7 +95,7 @@ body{
   font-size: 40px;
   color: white;
   z-index: 2;
-  left: 50vw;
+  left: 38vw;
   top: 50vh;
 }
 
