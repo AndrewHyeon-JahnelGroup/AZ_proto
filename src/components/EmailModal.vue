@@ -64,7 +64,7 @@ export default {
   padding: 20px;
 }
 .md-dialog {
-  width: 30%;
+  width: 40%;
 }
 
 .row{}

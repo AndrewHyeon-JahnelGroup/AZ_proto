@@ -31,7 +31,7 @@ export default {
 
 <style>
 .contactus {
-  width: 50%;
+  width: 60%;
   top: 100px;
   text-align: center
 }

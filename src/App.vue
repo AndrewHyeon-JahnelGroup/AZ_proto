@@ -42,7 +42,11 @@ export default {
 
 <style scoped>
 .nav{
-  /* position: sticky; */
+  position: fixed;
+  z-index: 2;
+  margin: 10px;
+  margin-top: 0px;
+  width: 100%;
 }
 body{
   width: auto;
@@ -67,6 +71,7 @@ body{
   border: 0px;
   padding: 0px;
   width: 100%;
+  z-index: 1;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

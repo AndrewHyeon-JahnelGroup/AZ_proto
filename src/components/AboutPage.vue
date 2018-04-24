@@ -19,11 +19,14 @@
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
+import Provenance from './overview/provenance'
+
 export default {
   name: 'AboutPage',
   components: {
     Carousel,
-    Slide
+    Slide,
+    Provenance
   },
   methods: {
     showSlides: function showSlides(n) {
@@ -34,7 +37,7 @@ export default {
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
-      } 
+      }
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }

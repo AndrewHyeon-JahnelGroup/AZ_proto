@@ -25,4 +25,4 @@ app.post('/send', function(req, res) {
   mgdata.to = 'derek@azura.la, regina@azura.legal';
   mgdata.from = mgdata.name + ' <' + mgdata.from + '>'
   delete mgdata.name
-  console.log(mgdata)wwwwwwaaaaaaaaaaaaaaaaaaaaas
+  console.log(mgdata)
