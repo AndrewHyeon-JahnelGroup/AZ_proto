@@ -43,7 +43,7 @@ export default {
   border: 0px;
   margin: 0px;
   padding: 0px;
-  top: -100px;
+  top: 35px;
   width: 100%;
   z-index: 0;
 }

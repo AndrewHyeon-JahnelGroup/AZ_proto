@@ -9,24 +9,28 @@
         <span class="dot" @click.stop="currentSlide(3)"></span>
       </div>
     </div>
-    <div class="top">
+    <div class="slide md-alignment-center-center">
+      <digi-pres />
+    </div>
+    <div class="slide md-alignment-center-center">
+      <provenance />
     </div>
 
-    <div class="mySlides fade">
-    </div>
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 import Provenance from './overview/provenance'
+import DigiPres from './overview/DigiPres'
 
 export default {
   name: 'AboutPage',
   components: {
     Carousel,
     Slide,
-    Provenance
+    Provenance,
+    DigiPres
   },
   methods: {
     showSlides: function showSlides(n) {
@@ -65,13 +69,13 @@ body{
 }
 
 .aboutpage {
-  height: auto;
+  height: 100;
   overflow: scroll;
 }
 
 #top {
   width: 100%;
-  height: auto;
+  max-height: 100vh;
   position: relative;
   z-index: 1;
   /* Preserve aspet ratio */
@@ -104,6 +108,10 @@ body{
 
 .abt {
   text-align: center
+}
+
+.slide {
+  height: 100vh;
 }
 
 #about {
