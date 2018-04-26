@@ -2,8 +2,8 @@
   <div class="navcontainer">
     <div class="container">
       <div class="row navrow">
-        <div class="col-md-4">
-          <h1>Azura</h1>
+        <div class="logo col-md-4">
+          <img src="./../assets/logo_azura_gold.png">
         </div>
         <div class="navbar col-md-4">
           <md-tabs class="md-transparent" md-sync-route>
@@ -25,6 +25,11 @@ export default{
 </script>
 
 <style scoped>
+
+img{
+  margin-left: 50px;
+  height: 40%;
+}
 
 .navrow{
   width: 100vh;
@@ -53,6 +58,7 @@ export default{
 .navcontainer{
   padding: 0px;
   margin: 0px;
+  margin-top: 30px;
   width: 100%;
 }
 </style>

@@ -79,7 +79,7 @@ export default {
 
 .fronttext {
   position: absolute;
-  top: 17vh;
+  top: 35vh;
   left:60%;
   padding-right: 50px;
   width: 35%

@@ -41,16 +41,16 @@ export default {
 
 <style>
 .container{
-  margin: 0px;
   padding: 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0px;
 }
 
 .left{
-  margin: 15vh;
+  /* margin: 15vh; */
 }
 
 .img{
