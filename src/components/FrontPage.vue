@@ -65,7 +65,7 @@ export default {
 }
 
 .goldtext {
-  width: 110%;
+  width: 100%;
   height: 120%;
   line-height: 30px;
 }
@@ -82,7 +82,7 @@ export default {
   top: 35vh;
   left:60%;
   padding-right: 50px;
-  width: 35%
+  width: 35%;
 }
 .loadercontainer {
   padding: 20px;

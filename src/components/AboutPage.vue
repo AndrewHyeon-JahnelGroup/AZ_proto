@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="slide md-alignment-center-center">
-      <digi-pres />
+      <digi-pres/>
     </div>
     <div class="slide md-alignment-center-center">
       <provenance />
@@ -86,7 +86,7 @@ body{
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 50px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -112,11 +112,16 @@ body{
 
 .slide {
   height: 100vh;
+  width: auto;
 }
 
 #about {
   width: 100%;
   text-align: center;
+}
+
+.digipres{
+  width: 100%;
 }
 
 </style>
