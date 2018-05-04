@@ -1,22 +1,30 @@
 <template>
+  <div class="digipres">
+    <div class="slide1container row">
 
-  <div class="container">
-    <div class="row center-align">
+        <div class="right col-md-3">
 
-      <div class="left col-md-4">
-
-        <div class="title">
+          <div class="title">
           <h4>Provenance Authentication and Security</h4>
         </div>
 
         <div class="text">
           <p> {{text}}</p>
         </div>
+        <div style="text-align:center">
+          <span class="dot1" v-on:click="switchSlides"></span>
+          <span class="dot2" @click.stop="switchSlides"></span>
+          <span class="dot3" @click.stop="switchSlides"></span>
+        </div>
       </div>
 
-    </div>
-  </div>
+      <div class="left col-md-8">
+        <img class="img" src="./../../assets/abt1.jpg">
+      </div>
 
+
+  </div>
+</div>
 
 
 </template>
