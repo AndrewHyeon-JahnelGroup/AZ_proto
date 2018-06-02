@@ -1,29 +1,32 @@
 <template>
-  <div>
-    <md-field>
-     <label>Name</label>
-     <md-input v-model="mgData.name"></md-input>
-    </md-field>
+  <v-form ref="form" v-model="valid" lazy-validation>
+    <v-text-field
+       v-model="mgData.name"
+       :rules="nameRules"
+       :counter="10"
+       label="Name"
+       required
+     ></v-text-field>
+     <v-text-field
+       v-model="mgData.from"
+       :rules="emailRules"
+       label="E-mail"
+       required
+     ></v-text-field>
+     <v-select
+       v-model="select"
+       :items="items"
+       :rules="[v => !!v || 'Item is required']"
+       label="Item"
+       required
+     ></v-select>
 
-    <md-field>
-     <label>Your Email</label>
-     <md-input v-model="mgData.from"></md-input>
-    </md-field>
+     <v-btn
+      :disabled="!valid"
+      @click="submit"
+      ></v-btn>
+    </v-form>
 
-    <md-field>
-     <label>Phone Number</label>
-     <md-input v-model="mgData.number"></md-input>
-    </md-field>
-
-    <md-field>
-     <label>Subject</label>
-     <md-input v-model="mgData.subject"></md-input>
-    </md-field>
-    <md-field>
-     <label>Message</label>
-     <md-textarea v-model="mgData.text"></md-textarea>
-    </md-field>
-  </div>
 </template>
 
 <script>

@@ -11,7 +11,9 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import VueCarousel from 'vue-carousel'
+import Vuetify from 'vuetify'
 
+Vue.use(Vuetify);
 Vue.use(VueCarousel);
 Vue.use(BootstrapVue);
 Vue.use(VueRouter);
@@ -34,6 +36,9 @@ import AboutPage from './components/AboutPage'
 import OurTeam from './components/OurTeam'
 import ContactPage from './components/ContactPage'
 import EmailModal from './components/EmailModal'
+import DigiPres from './components/overview/DigiPres'
+import Provenance from './components/overview/provenance'
+import MarketPlace from './components/overview/MarketPlace'
 
 Vue.config.productionTip = false
 
@@ -46,6 +51,18 @@ const routes = [
   {
     path: '/about',
     component: AboutPage
+  },
+  {
+    path: '/about/digitization',
+    component: DigiPres
+  },
+  {
+    path: '/about/provenance',
+    component: Provenance
+  },
+  {
+    path: '/about/marketplace',
+    component: MarketPlace
   },
   {
     path: '/team',

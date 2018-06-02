@@ -1,20 +1,14 @@
 <template>
   <div class="aboutpage md-alignment-center-center">
-    <img id="top" src="../assets/img_2.jpg">
-    <div class="text">
-      <p class="md-alignment-center-center"> <b>The Azura Platform</b> </p>
-      <div style="text-align:center">
-        <span class="dot" @click.stop="currentSlide(1)"></span>
-        <span class="dot" @click.stop="currentSlide(2)"></span>
-        <span class="dot" @click.stop="currentSlide(3)"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+        </div>
+        <div class="col-sm-7">
+        </div>
       </div>
     </div>
-    <div class="slide md-alignment-center-center">
-      <digi-pres/>
-    </div>
-    <div class="slide md-alignment-center-center">
-      <provenance />
-    </div>
+
 
   </div>
 </template>

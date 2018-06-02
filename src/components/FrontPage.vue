@@ -1,22 +1,13 @@
 <template>
   <div class="platform">
-    <div class="row platformcontainer">
-      <div class="col-md-4 white">
+    <div class="">
+      <div class="image">
+        <img src="../assets/img_1.jpg">
+      </div>
+      <div class="">
         <div class="goldtext">
           <p> The <b>world's First</b>. All-Encompassing Digital Arts Platform</p>
         </div>
-      </div>
-
-      <div class="col-md-8 frontpage">
-        <div class="image">
-          <img src="../assets/img_1.jpg">
-        </div>
-        <div class="fronttext">
-          <p>{{ overview1 }}</p>
-          <br />
-          <p>{{ overview2 }}</p>
-        </div>
-
       </div>
     </div>
   </div>
@@ -37,14 +28,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 .image{
   position: absolute;
-  border: 0px;
+  top: 110px;
+  border-top: 20px;
   margin: 0px;
   padding: 0px;
-  top: 35px;
-  width: 100%;
+  height: 50%;
   z-index: 0;
 }
 .platformcontainer {
