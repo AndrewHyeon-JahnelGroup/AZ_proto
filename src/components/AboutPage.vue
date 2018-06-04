@@ -1,12 +1,11 @@
 <template>
   <div class="aboutpage md-alignment-center-center">
-    <div class="container">
       <div class="row">
         <div class="col-sm-9">
+          <p>dsafdafdsa</p>
         </div>
         <div class="col-sm-7">
         </div>
-      </div>
     </div>
 
 
@@ -56,66 +55,9 @@ export default {
 
 <style scoped>
 
-body{
-  width: 100%;
-  height: 100%;
-
-}
-
-.aboutpage {
-  height: 100;
-  overflow: scroll;
-}
-
-#top {
-  width: 100%;
-  max-height: 100vh;
-  position: relative;
-  z-index: 1;
-  /* Preserve aspet ratio */
-
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 50px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.text{
+.aboutpage{
   position: absolute;
-  font-size: 40px;
-  color: white;
-  z-index: 2;
-  left: 38vw;
-  top: 50vh;
-}
-
-.abt {
-  text-align: center
-}
-
-.slide {
-  height: 100vh;
-  width: auto;
-}
-
-#about {
-  width: 100%;
-  text-align: center;
-}
-
-.digipres{
-  width: 100%;
+  top: 110px;
 }
 
 </style>

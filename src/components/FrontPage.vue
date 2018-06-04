@@ -1,14 +1,11 @@
 <template>
   <div class="platform">
-    <div class="">
-      <div class="image">
-        <img src="../assets/img_1.jpg">
-      </div>
-      <div class="">
-        <div class="goldtext">
-          <p> The <b>world's First</b>. All-Encompassing Digital Arts Platform</p>
-        </div>
-      </div>
+    <div class="image">
+      <img src="../assets/img_1.jpg">
+    </div>
+    <div class="text">
+      <p> The <b>world's First</b>. All-Encompassing Digital Arts Platform</p>
+    </div>
     </div>
   </div>
 </template>
@@ -32,115 +29,22 @@ export default {
 .image{
   position: absolute;
   top: 110px;
-  border-top: 20px;
   margin: 0px;
   padding: 0px;
   height: 50%;
   z-index: 0;
 }
-.platformcontainer {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  margin: 0px
+.platform{
 }
 
-.white {
-  position: relative;
-  color: #B5A369;
-  top: 40vh;
-  left: 20vh;
-  font-size: 30px;
-  width: 200px;
-  z-index: 2;
-}
-
-.goldtext {
-  width: 100%;
-  height: 120%;
-  line-height: 30px;
-}
-
-.frontpage {
-  padding: 0px;
-  padding-top: 20px;
-  margin: 0;
-  position: relative;
-}
-
-.fronttext {
+.text {
   position: absolute;
-  top: 35vh;
+  top: 50vh;
   left:60%;
   padding-right: 50px;
   width: 35%;
-}
-.loadercontainer {
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-
-.par{
-  align-items: center;
-  width: 80%;
-  margin-top: 50px;
-}
-.loader {
-  width: 3em;
-  height: 3em;
-  animation: loaderAnim 1.25s infinite;
-  outline: 1px solid transparent;
-}
-.loader #largeBox {
-  height: 3em;
-  width: 3em;
-  background-color: #34495e;
-  outline: 1px solid transparent;
-  position: fixed;
-}
-.loader #smallBox {
-  height: 3em;
-  width: 3em;
-  background-color: #ECECEC;
-  position: fixed;
-  z-index: 1;
-  outline: 1px solid transparent;
-  animation: smallBoxAnim 1.25s alternate infinite ease-in-out;
-}
-
-@keyframes smallBoxAnim {
-  0% {
-    transform: scale(0.2);
-  }
-  100% {
-    transform: scale(0.75);
-  }
-}
-@keyframes loaderAnim {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
+  font-size: 30px;
+  line-height: 30px;
 }
 
 </style>

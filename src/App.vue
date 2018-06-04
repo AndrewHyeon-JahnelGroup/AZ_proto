@@ -1,16 +1,12 @@
 <template>
-  <div class="whole">
+  <div class="app whole container">
     <div class="nav">
       <nav-bar/>
     </div>
-    <v-content>
-      <v-container fluid>
-        <div class="page">
-          <router-view />
-        </div>
-      </v-container>
-    </v-content>
-</div>
+    <div class="page align-center">
+      <router-view />
+    </div>
+  </div>
 
 </template>
 
@@ -49,40 +45,37 @@ export default {
 </script>
 
 <style>
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
 .nav{
   position: fixed;
   z-index: 2;
-  margin: 10px;
-  margin-top: 0px;
+  top: 0;
+}
+
+.whole{
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
   width: 100%;
 }
-body{
-  width: auto;
-  height: 100%
-}
-.whole{
-  width: auto;
-  background-size: contain;
-  height: auto;
-  background-color: rgba(0,0,0,0);
-  margin: 0px;
 
-}
 
-.top{
-  background: white
-}
 
-/* .page{
+.page{
   margin: 0px;
   margin-right: 0px;
   border: 0px;
   padding: 0px;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
-} */
+}
 
-#app {
+.app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

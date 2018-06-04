@@ -1,20 +1,17 @@
 <template>
 
-  <!-- <div class="container">
-    <div class="row contactcont">
-      <div class="wholebox">
-        <div class="col-sm-4 contactText">
+  <div class="contact align-center row">
+        <div class="col-md-6 align-center contactText">
           <h6>{{msg}}</h6>
           <p>{{content}}</p>
         </div>
-        <div class="col-sm-4 emailForm">
+        <span class="border"></span>
+        <div class="col-md-5 emailForm">
           <email-form v-bind:mgData="mgData"/>
         </div>
-      </div>
-    </div>
-  </div> -->
+  </div>
 
-    <v-layout row wrap class="contactText">
+    <!-- <v-layout row wrap class="contactText">
       <v-flex xs3 offset-xs6>
         <v-card>
           <h6>{{msg}}</h6>
@@ -24,7 +21,7 @@
       <v-flex xs6>
         <email-form v-bind:mgData="mgData" />
       </v-flex>
-    </v-layout>
+    </v-layout> -->
 </template>
 
 <script>
@@ -53,18 +50,24 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-.contactcont {
-  margin-top: 0px;
+.contact{
+  position: fixed;
+  /* margin-top: 30vh; */
   text-align: center;
-
+  margin-left: 10vh;
+  margin-right: 10vh;
+  
 }
 
-.contactText {
+.contactText{
   border-right: 2px black;
-  /* padding-top: 150px; */
+}
+
+.emailForm{
 
 }
+
 
 </style>

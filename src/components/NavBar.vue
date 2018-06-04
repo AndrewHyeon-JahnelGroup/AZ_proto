@@ -55,6 +55,7 @@ img{
 }
 
 .navcontainer{
+  position: fixed;
   padding: 0px;
   margin: 0px;
   margin-top: 30px;
